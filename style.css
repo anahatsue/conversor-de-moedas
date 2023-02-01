@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --first-color: #0b2518;
+  --contrast-color: white;
+}
+
+body[theme="dolar"] {
+  --from-text: "US$";
+}
+
+body[theme="can-dolar"] {
+  --from-text: "CAD$";
+}
+
+body[theme="euro"] {
+  --from-text: "EUR€";
+}
+
+body[theme="pound"] {
+  --from-text: "GBP£";
+}
+
+body[theme="bitcoin"] {
+  --from-text: "BTN₿";
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("./background-img.jpg");
+    background-color: var(--first-color);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  nav {
+    list-style-type: none;
+    max-width: 100px;
+    right: 0;
+    margin-left: auto;
+    height: 100%;
+    background-color: var(--first-color);
+    opacity: 0.5;
+    float: right;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-shadow: -1px 0px 25px #122d21;
+  }
+
+  nav li {
+    margin: 0.5em 2px 0.5em 0px;
+    display: block;
+    padding: 8px 16px;;
+  }
+
+  nav li button {
+    width: 100%;
+    height: 2.5em;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    color: var(--contrast-color);
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  nav li button:hover {
+    background-color: var(--contrast-color);
+    opacity: 0.5;
+    color: var(--first-color);
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    max-height: 250px;
+  }
+
+  .ctn-conversor {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ctn-conversor p {
+    color: white;
+    font-size: 36px;
+  }
+
+  #from-text::before {
+    content: var(--from-text);
+  }
+
+  #input-text, #output-text {
+    width: 250px;
+    height: 1.8em;
+    resize: none;
+    border: 2px solid var(--first-color);
+    border-radius: 25px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 0.5em;
+    opacity: 0.6;
+  }
+
+  #input-text, #output-text:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid var(--first-color);
+    outline: 0;
+  }
+  
