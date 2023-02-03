@@ -12,7 +12,7 @@ body[theme="dolar"] {
   --from-text: "US$";
 }
 
-body[theme="can-dolar"] {
+body[theme="can"] {
   --from-text: "CAD$";
 }
 
@@ -145,5 +145,23 @@ body {
     box-shadow: 0 0 0 0;
     border: 2px solid var(--first-color);
     outline: 0;
+  }
+
+  #btn-convert {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #reverse {
+    height: 2em;
+    width: auto;
+    font-size: 24px;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
   

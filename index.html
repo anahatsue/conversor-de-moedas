@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor Universal</title>
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body theme="dolar">
-  <nav>
+  <nav id="switch-theme-btn">
     <ul>
-      <li><button title="Real para Dólar">US</button></li>
-      <li><button title="Real para Dólar Canadense">CAD</button></li>
-      <li><button title="Real para Euro">EUR</button></li>
-      <li><button title="Real para Libra">GBP</button></li>
-      <li><button title="Real para Bitcoin">BTC</button></li>
+      <li><button title="Real para Dólar" id="dolar">US</button></li>
+      <li><button title="Real para Dólar Canadense" class='btn-theme' id="can">CAD</button></li>
+      <li><button title="Real para Euro" class='btn-theme' id="euro">EUR</button></li>
+      <li><button title="Real para Libra" class='btn-theme' id="pound">GBP</button></li>
+      <li><button title="Real para Bitcoin" class='btn-theme' id="bitcoin">BTC</button></li>
       
     </ul>
   </nav>
     <div class="container">
         <h1 class="page-title">
-          Conversor Universal
+          Conversor de Moedas
         </h1>
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
       </div>
@@ -36,9 +36,8 @@
         </div>
         <div id="output">
           <p id="from-text"></p>
-          <textarea id="output-text"></textarea>
+          <textarea id="output-text" readonly></textarea>
         </div>
-
       </form>
 </body>
 </html>
